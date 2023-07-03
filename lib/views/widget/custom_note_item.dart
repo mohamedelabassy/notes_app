@@ -28,7 +28,7 @@ class NoteItem extends StatelessWidget {
               child: Text(
                 'Build you carer by Mohamed Elabasy',
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 18,
                   color: Colors.black.withOpacity(.4),
                 ),
               ),
