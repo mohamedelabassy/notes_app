@@ -12,7 +12,7 @@ void main() async {
   Bloc.observer = SimbpleBlocObserver();
   await Hive.initFlutter();
   Hive.registerAdapter(NoteModelAdapter());
-  await Hive.openBox<NoteModel>(KNotesBox);
+  await Hive.openBox<NoteModel>(kNotesBox);
   runApp(const NotesApp());
 }
 
@@ -26,7 +26,7 @@ class NotesApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData(brightness: Brightness.dark, fontFamily: 'Poppins'),
-        home: NotesView(),
+        home: const NotesView(),
       ),
     );
   }
